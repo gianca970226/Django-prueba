@@ -1,0 +1,13 @@
+{% extends 'Proyeccion/docente.html' %}
+{% block contenido %}
+<br>
+<div class="col-xs-12">
+    <form method="POST"> {% csrf_token %} 
+        <table class="table">
+            {{ form.as_table }}      
+        </table>
+        <input type="submit" id="btnModificar" value="Modificar"  class="btn btn-lg btn-primary center-block">
+        <br>
+    </form>
+</div>
+{% endblock %}

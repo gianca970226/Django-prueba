@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% extends 'index.html' %}
+
+{% block title %}
+inicio de session
+{% endblock %}
+{% block content %}
+
+<div id="login" class=" form-signin" >
+    <div id="tituloLogin" >
+        <h3 class="h3" align="center" >Bienvenido
+        </h3>
+        <p style="color: #8A959E; font-size: 14px" align="center">  INGRESA TU CUENTA</p>
+    </div>
+    <br><br><br>
+    <p id="aviso" ></p>
+    <input type="text" id="usuario" class=" form-control" name="user" placeholder="Usuario" required autofocus >
+
+    <br><br>
+    <input type="password" id="password" class=" form-control" name="pass" placeholder="Password" required   >
+    <br>
+    <button  id="btnIngresar"  class="btn">Ingresar</button>
+</div>
+
+<!--<FORM  method="POST"> {% csrf_token %} 
+    <TABLE class="table">
+        {{ form.as_table }}      
+    </TABLE>
+    <input type="submit" id="btnRegistrar" value="Registrar"  class="btn"> 
+</FORM>-->
+
+{% endblock %}

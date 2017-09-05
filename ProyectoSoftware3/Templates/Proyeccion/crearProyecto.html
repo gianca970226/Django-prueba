@@ -1,0 +1,16 @@
+{% extends 'Proyeccion/docente.html' %}
+{% block contenido %}
+<br>
+<h3>Registrar informacion descriptiva</h3>
+<div>
+    <div class="col-xs-12">
+        <form method="POST"> {% csrf_token %} 
+            <table class="table">
+                {{ form.as_table }}      
+            </table>
+            <input type="submit" id="btnRegistrar" value="Registrar"  class="btn btn-lg btn-primary center-block">
+            <br>
+        </form>
+    </div>
+</div>
+{% endblock %}
